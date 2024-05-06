@@ -9,11 +9,11 @@ TL;DR: We tried but ultimately failed to make automated feature engineering prod
 
 ## Summary of Contributions and Critical Elements of Success 
 
-The parts of our workflow that contributed to our final solution and, thus, our success are summarized in the following. We further summarized and cleaned our final code in [this GitHub repository](TODO). 
+The parts of our workflow that contributed to our final solution and, thus, our success are summarized in the following. We further summarized and cleaned our final code in [this GitHub repository](https://github.com/AutoML-Grandmasters/First-AutoML-Grand-Prix/tree/main). 
 
-1. **Feature Engineering**: We used summary statistics like others but did not drop the original features, [CODE](TODO). 
-2. **Model Selection**: We used AutoGluon with an optimized set of model hyperparameters, three small dirty hacks including a bug fix for early stopping LightGBM, and up to four stacking layers, [CODE](TODO).
-3. **Dummy AutoML Ensemble**: We created a merge of two separate AutoGluon runs with a simple weighted ensemble, [CODE](TODO).
+1. **Feature Engineering**: We used summary statistics like others but did not drop the original features, [CODE](https://github.com/AutoML-Grandmasters/First-AutoML-Grand-Prix/blob/main/feature_engineering.py). 
+2. **Model Selection**: We used AutoGluon with an optimized set of model hyperparameters, three small dirty hacks including a bug fix for early stopping LightGBM, and up to four stacking layers, [CODE](https://github.com/AutoML-Grandmasters/First-AutoML-Grand-Prix/blob/main/autogluon_code.py).
+3. **Dummy AutoML Ensemble**: We created a merge of two separate AutoGluon runs with a simple weighted ensemble, [CODE](https://github.com/AutoML-Grandmasters/First-AutoML-Grand-Prix/blob/main/dirty_final_solution_merge.py).
 
 ### Overview Diagram
 Given that our final solution mostly builds on AutoGluon, the best representative image/workflow diagram that I have in mind is the typical overview of AutoGluon (taken from Figure 2, [here](https://arxiv.org/pdf/2003.06505)):
@@ -82,4 +82,5 @@ A lot of ideas did not work for this dataset, so here is just a short hall of sh
 If you have any further questions or would like more details on some of our activities, let me know in the comments.
 
 Best regards,
+
 Lennart, on behalf of the "AutoML Grandmasters" 
